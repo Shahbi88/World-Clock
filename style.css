@@ -1,4 +1,18 @@
 body {
   text-align: center;
-  color: darkolivegreen;
+  color: darkcyan;
+}
+.container {
+  border-radius: 20px;
+  padding: 20px;
+  border-color: blueviolet;
+  background-color: bisque;
+  margin: 30px 150px;
+}
+.city {
+  color: mediumorchid;
+}
+.footer {
+  font-size: xx-small;
+  margin-top: 60px;
 }
