@@ -15,3 +15,13 @@ setInterval(function () {
     .tz("Europe/Paris")
     .format(`hh:mm:ss [<small>]A[</small>]`);
 }, 1000);
+
+function updateCity(event) {
+  let display = document.querySelector(".display");
+  let data = event.target.value;
+  display.innerHTML = moment()
+    .tz("${data}")
+    .format(`LL hh:mm:ss [<small>]A[</small>]`);
+}
+let citySelect = document.querySelector("#city");
+citySelect.addEventListener("change", updateCity);
