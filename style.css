@@ -1,6 +1,7 @@
 body {
   text-align: center;
   color: darkcyan;
+  font-family: "Courier New", Courier, monospace;
 }
 .container {
   border-radius: 20px;
@@ -15,4 +16,28 @@ body {
 .footer {
   font-size: xx-small;
   margin-top: 60px;
+  color: navy;
+}
+select {
+  font-size: medium;
+  width: fit-content;
+  margin: 20px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.time {
+  color: black;
+}
+.city {
+  color: blueviolet;
+}
+h5 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+}
+h4 select {
+  font-size: medium;
+  font-family: "Courier New", Courier, monospace;
 }
