@@ -6,6 +6,7 @@ body {
 .container {
   border-radius: 20px;
   padding: 20px;
+  margin: 20px;
   border-color: blueviolet;
   background-color: bisque;
   margin: 30px 120px;
@@ -32,6 +33,8 @@ select {
 }
 .city-1 {
   color: blueviolet;
+  display: flex;
+  justify-content: space-around;
 }
 h5 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -43,4 +46,6 @@ h4 select {
 }
 .city-2 {
   margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
