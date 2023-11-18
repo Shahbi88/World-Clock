@@ -23,6 +23,9 @@ function updateCity(event) {
   display.innerHTML = moment()
     .tz("${data}")
     .format(`LL hh:mm:ss [<small>]A[</small>]`);
+  if (data === `current`) {
+    data = moment.tz.guess();
+  }
 }
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", updateCity);
