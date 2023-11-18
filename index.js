@@ -17,13 +17,12 @@ setInterval(function () {
 }, 1000);
 
 function updateCity(event) {
-  let display = document.querySelector(".display");
   let data = event.target.value;
+  let display = document.querySelector(".display");
+
   display.innerHTML = moment()
     .tz("${data}")
     .format(`LL hh:mm:ss [<small>]A[</small>]`);
 }
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", updateCity);
-
-setInterval(updateCity, 1000);
