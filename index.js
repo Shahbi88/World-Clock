@@ -19,7 +19,9 @@ setInterval(function () {
 function updateCity(event) {
   let display = document.querySelector(".display");
   let both = event.target.value;
-  display.innerHTML = moment().tz(both).format(`hh:mm:ss [<small>]A[</small>]`);
+  display = display.innerHTML = moment()
+    .tz(both)
+    .format(`hh:mm:ss [<small>]A[</small>]`);
   if (both === "current") {
     display = moment.tz.guess();
   }
