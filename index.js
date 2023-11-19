@@ -19,14 +19,14 @@ setInterval(function () {
 function updateCity(event) {
   let display = document.querySelector(".display");
   let both = event.target.value;
-  display = display.innerHTML = moment()
-    .tz(both)
-    .format(`hh:mm:ss [<small>]A[</small>]`);
+
+  display.innerHTML = moment().tz(both).format(`hh:mm:ss [<small>]A[</small>]`);
   if (both === "current") {
     display = moment.tz.guess();
   }
+  setTimeout(() => {
+    updateCity(event);
+  }, 1000);
 }
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", updateCity);
-
-setInterval(updateCity, 1000);
